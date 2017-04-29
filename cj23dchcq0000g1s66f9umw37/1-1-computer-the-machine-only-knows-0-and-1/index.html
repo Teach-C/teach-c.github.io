@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>计算机 -- 只懂得0和1的机器 | Teach-C</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="计算机,计算机基础,二进制,计算机原理,程序,指令">
+    <meta name="description" content="&amp;emsp; 终于，经过几天的调试修改，我解决了章节页面的排序问题，可以进行进一步的讲解了，本节我将和大家探讨关于计算机的一些基本的问题，废话不多说，Let’s go ! 什么是计算机？&amp;emsp; 计算机技术已经进入了我们生活的方方面面，我们现代生活的一切都是建立在计算机技术衍生的设备之上的：从早上叫醒你的电子闹钟或者手机，再到上学上班路上的车载设备，或是签到时候的打卡机，或是你上班上课时偷偷打">
+<meta name="keywords" content="计算机,计算机基础,二进制,计算机原理,程序,指令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机 -- 只懂得0和1的机器">
+<meta property="og:url" content="https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/index.html">
+<meta property="og:site_name" content="Teach-C">
+<meta property="og:description" content="&amp;emsp; 终于，经过几天的调试修改，我解决了章节页面的排序问题，可以进行进一步的讲解了，本节我将和大家探讨关于计算机的一些基本的问题，废话不多说，Let’s go ! 什么是计算机？&amp;emsp; 计算机技术已经进入了我们生活的方方面面，我们现代生活的一切都是建立在计算机技术衍生的设备之上的：从早上叫醒你的电子闹钟或者手机，再到上学上班路上的车载设备，或是签到时候的打卡机，或是你上班上课时偷偷打">
+<meta property="og:updated_time" content="2017-04-29T14:34:44.707Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="计算机 -- 只懂得0和1的机器">
+<meta name="twitter:description" content="&amp;emsp; 终于，经过几天的调试修改，我解决了章节页面的排序问题，可以进行进一步的讲解了，本节我将和大家探讨关于计算机的一些基本的问题，废话不多说，Let’s go ! 什么是计算机？&amp;emsp; 计算机技术已经进入了我们生活的方方面面，我们现代生活的一切都是建立在计算机技术衍生的设备之上的：从早上叫醒你的电子闹钟或者手机，再到上学上班路上的车载设备，或是签到时候的打卡机，或是你上班上课时偷偷打">
+    
+        <link rel="alternate" type="application/atom+xml" title="Teach-C" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Teach-C</h5>
+          <a href="mailto:Teach-C@outlook.com" title="Teach-C@outlook.com" class="mail">Teach-C@outlook.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                章节
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/Teach-C" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.weibo.com/Tecsploit" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/license"  >
+                <i class="icon icon-lg icon-License"></i>
+                License
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">计算机 -- 只懂得0和1的机器</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">计算机 -- 只懂得0和1的机器</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-04-29T09:39:26.000Z" itemprop="datePublished" class="page-time">
+  2017-04-29
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/1-Chapter/">1 Chapter</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#什么是计算机？"><span class="post-toc-number">1.</span> <span class="post-toc-text">什么是计算机？</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#只懂-0-和-1-的机器"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">只懂 0 和 1 的机器</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#任劳任怨的傻机器"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">任劳任怨的傻机器</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#总结"><span class="post-toc-number">2.</span> <span class="post-toc-text">总结</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-1-1-computer-the-machine-only-knows-0-and-1"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">计算机 -- 只懂得0和1的机器</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-04-29 17:39:26" datetime="2017-04-29T09:39:26.000Z"  itemprop="datePublished">2017-04-29</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/1-Chapter/">1 Chapter</a></li></ul>
+
+
+
+            
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>&emsp; 终于，经过几天的调试修改，我解决了章节页面的排序问题，可以进行进一步的讲解了，本节我将和大家探讨关于计算机的一些基本的问题，废话不多说，Let’s go !</p>
+<h1 id="什么是计算机？"><a href="#什么是计算机？" class="headerlink" title="什么是计算机？"></a>什么是计算机？</h1><p>&emsp; 计算机技术已经进入了我们生活的方方面面，我们现代生活的一切都是建立在计算机技术衍生的设备之上的：从早上叫醒你的电子闹钟或者手机，再到上学上班路上的车载设备，或是签到时候的打卡机，或是你上班上课时偷偷打游戏，聊天，刷新社交媒体的电脑或者手机，再到你正在浏览这个项目的设备。</p>
+<p>&emsp; 那么到底<strong>什么是计算机呢？</strong></p>
+<a id="more"></a>
+<p>&emsp; 由于计算机是舶来品，我们要想更直接的了解它，就是通过它诞生的地区的语言，在英语中计算机写作 <code>computer</code> ，英文词典对computer 的解释是：</p>
+<blockquote>
+<p><strong>an electronic device for storing and processing data, typically in binary form, according to instructions given to it in a variable program.</strong></p>
+</blockquote>
+<p>大意就是一种以<code>二进制</code>形式根据<code>可变程序</code>的<code>指令</code> <code>存储和处理数据</code>的一种电子设备。</p>
+<p>&emsp; 这么一解释，是不是一下子就懂了呢，都是汉字，一看就懂，是吧～</p>
+<p>&emsp; 那……..<strong>你给我用自己的语言复述一下吧.</strong>…..</p>
+<p>&emsp; ……………………………………….</p>
+<p>&emsp; <strong>说啊，你倒是说啊！！！行了行了，我知道你没看明白，能看明白就怪了~</strong></p>
+<p>&emsp; 怎么了你还<strong>委屈上了</strong>？？</p>
+<p>&emsp; 行了，行了，<strong>别委屈了</strong>，我给你讲<strong>还不行么</strong>…….</p>
+<h2 id="只懂-0-和-1-的机器"><a href="#只懂-0-和-1-的机器" class="headerlink" title="只懂 0 和 1 的机器"></a>只懂 0 和 1 的机器</h2><p>&emsp; 上面的提到了计算机以二进制形式工作，那么什么是二进制呢？</p>
+<p>&emsp; 简单来说，二进制就是一种计数方法，就和我们平常用的十进制类似。</p>
+<p>&emsp; 在十进制中，我们有0 - 9 这十个基本数字，计数的时候从 1 开始，每满 10 就向前进一位。同理，二进制只有 0 和 1这两个数字，每满 2 就向前进一位。</p>
+<p>&emsp; 可能你听到这里还是一头雾水，所以我要和大家闲聊一会了，说一说我学习二进制的时候：在我刚开始接触电脑的时候是不了解二进制的，甚至在我开始学习 VB 的时候，我也不是很理解二进制，当然，我现在也懒的算二进制。实际上，在大多数情况下，我们是不需要自己计算二进制的，因为我们有计算器这个好帮手，所以在这里我也只是给大家讲讲基本的二进制知识，<strong>我个人觉得</strong>，没必要在练习进制换算之间浪费太多时间。当然<strong>这只代表我个人观点</strong>。</p>
+<p>&emsp; 好了我们言归正传，继续说一说二进制，下面我将通过几个换算给大家展示二进制的原理：</p>
+<p>&emsp; 比如，我们在十进制中用 0 来表示没有某种东西，在二进制中我们也用 0 。当我们用十进制表示 1 的时候，1 小于 2，所以我们不需要考虑进位的事情，所以十进制的 1 在二进制中还是 1 （要注意的是，这里的 0 和 1 无论是二进制还是十进制中，都只是表示 0 个和 1 个，而不是 101 ， 12013这样的数在某一位的 0 和 1 ）。当我们在十进制中表示 2 的时候，二进制中已经满 2 了，要进位了，（这很容易理解：二进制中 1 是某一位的最大值，超过1就要进位，就好比十进制中 9 是某一位的最大值一样，在十进制中，我们也没有单个数字表示”十“）所以十进制的 2 在二进制中表示为 10 （这并不读作”十“，而是”一“ ”零“），由此十进制的 3 在二进制中就是 11 ，十进制中的 4 在二进制中就是 100 了，十进制的 5 对应二进制 101 ，6 对应 110 ， 7 对应 111 ….依次类推。</p>
+<p>&emsp; 到这里，你就已经学会了二进制的基本原理了，你已经可以很低效率，但是很准确的计算任何一个十进制正整数对应的二进制数了，你可能会想问如何用二进制表示十进制数的正负以及小数部分，这些我在本节就不写了，这并不会影响继续的阅读，如果在以后需要，比如用二进制表示正负，我将会继续讲解，我不想因为过于深入复杂的介绍二进制而影响大家的阅读兴趣。</p>
+<p>&emsp; 另外还有一种简单的十进制和二进制的转换方法，大家可以参考 <a href="http://zh.wikihow.com/%E4%BB%8E%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E4%B8%BA%E4%BA%8C%E8%BF%9B%E5%88%B6" target="_blank" rel="external">如何从十进制转换为二进制</a>  （PS：这篇文章是图文解释的哦～笑。。）</p>
+<p>&emsp; 讲了二进制，你可能会问为什么计算机会用二进制呢？和我们人类一样用十进制不好么？</p>
+<p>&emsp; 当然不好，用了十进制，计算机就会和人类一样，然后学会人类的一切，拥有自我意识，觉得人类是多余的，然后……..所以为了抑制计算机的发展人们用二进制禁锢了计算机的能力，化解了危机。好了，好了，我编不下去了。。。</p>
+<p>&emsp; 实际上，在计算机诞生之前的机械传动计算装置采用的十进制形式工作，这种装置会有齿轮等装置来表示0 - 9 ，通过传动装置进行运算和进位，由于年代离我们实在是太久远了，我也不是很了解，所以我只是简单的说一下。</p>
+<p>&emsp; 说回计算机，计算机之所以使用二进制，是因为这样很方便对数据进行存储和处理，很多自然界的信号(也就是所谓的模拟信号)，都可以很好的以二进制的形式转换为计算机内部的数字信号，比如电位的高低，运动的有无，就可以用 0 和 1 来描述，高电位用 1 ，低电位用 0 ，运动用 1 ，静止为 0（当然也可以正好相反）。从上面的二进制原理中，我们知道二进制是一种计数方法，所以二进制也可以进行四则运算，而计算机中主要进行运算操作的晶体管，其原型的电子管，电子管只有导通和截止两个状态，正好对应了二进制中的 0 和 1  ，然后通过各种各样的逻辑电路，就可以实现各种各样的用于各种各样计算的电路（这就涉及微机原理的内容了，本项目不讨论）。</p>
+<p>&emsp;  上面说了计算机用二进制进行运算，那么计算机是如何通过二进制进行存储的呢？我们从最常用的存储介质：<strong>磁盘</strong>说起吧。磁盘，顾名思义，就是用磁效应进行存储的类似圆盘一样的东西，常见的磁盘有：硬盘，软盘。</p>
+<p>&emsp; 硬盘可能大家会见过，软盘因为年代久远，现在很少能见到了，至于硬盘的细节，可以参看<a href="https://zh.wikipedia.org/wiki/%E7%A1%AC%E7%9B%98" target="_blank" rel="external">维基百科</a>，硬盘内部有磁颗粒，我们知道磁极分为N - S ，正好也对应二进制的 0 或 1 ，所以，把数据写入磁盘就是将磁性物质磁化成我们想要的磁极排列情况（因为磁性物质是立式放置的所以只会有一个磁级在上面），读取的时候就是读出磁极的顺序。</p>
+<p>&emsp; 至于光盘是通过盘面的凹凸性来存储的，固态存储设备（固态硬盘，U盘，SD卡等）存储原理稍许不同，但也只是用两种状态来表示数据。</p>
+<p>&emsp; 到此，二进制与计算机的关系就介绍完了，如果大家有什么问题或者发现了什么错误，可以在下面评论区留言哦！</p>
+<h2 id="任劳任怨的傻机器"><a href="#任劳任怨的傻机器" class="headerlink" title="任劳任怨的傻机器"></a>任劳任怨的傻机器</h2><p>&emsp; 虽然我们现在的计算机越来越智能，但计算机并不聪明的，它们很傻，聪明的是人。还记得最开始那句计算机的解释么？我们还差最后一块拼图就解开计算机的奥秘了！</p>
+<p>&emsp; 上面写了什么？我就知道你忘的差不多了，我带你回忆一下吧！上面说，计算机是根据<code>可变程序</code>的<code>指令</code> 来进行数据的存储和处理的，其实我觉得这句话我翻译的并不好，<strong>可变程序</strong>听起来不仅不顺嘴，而且生硬还晦涩难懂，我们可以理解成各种各样的程序，或者单纯的程序就好了，因为程序就是各种各样的，我们的闹钟程序，天气预报程序，或者你现在浏览这个项目的浏览器程序，都是程序。</p>
+<p>&emsp; 那么什么是程序呢，程序可以抽象成由为了完成某些工作的指令的有规律的组合。那么问题来了，什么是指令呢？指令就是本身计算机中设计好了的某些操作（具体的解释是<strong>由指令集架构定义的单个的CPU操作</strong>，但是我们还没介绍CPU，所以我只能形象化的，稍微偏离本意的描述这个概念了），你可以这样理解：</p>
+<blockquote>
+<p>我们写了一个计算3X + 2Y的程序，这个程序是可以计算3X + 2Y 的，这是程序，程序执行需要执行3 <em> X 和 2 </em> Y 的乘法运算指令，还需要执行 3 <em> X 与 2 </em> Y 的结果的求和指令.</p>
+</blockquote>
+<p>&emsp; 从上面的例子中，你会发现，计算机计算的方式和我们没有多大区别（不考虑这之间需要十进制和二进制转换之类的问题），也需要按照计算符号的优先级进行运算，然后得出结果，事实上也就是这样，比如说你要写一个找出一组数中最大数的程序，计算机只会一个数一个数的比较，而不是它一下就知道最大值或最小值，之所以会有这样的错觉是因为计算机能很快的处理这些数据，对于我们来说也就是一瞬间的问题。</p>
+<p>&emsp; 这也就是为什么计算机是任劳任怨的傻机器的原因，它只会按照设计好的程序，去执行人类给他们的指令，而不会自己主观的去执行什么。它也不会投机取巧，也许你以后会发现自己写的代码被自动优化了，那也不是计算机自发的，而是编译器进行的优化（对，编译器也是后面要讲的内容，自行pass掉。。。），编译器的优化也是人为设计好的。</p>
+<p>&emsp; 但不得不说，虽然他们傻乎乎的，但是他们很可信！（至少比人可信。）</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>&emsp; 本篇并没有讲CPU 内存 这些概念，而是让大家在一个适中的层次了解了计算机的基本工作原理，也讲了基本二进制的原理，也稍不恰当的解释了程序和指令，这两者与数据的关系，我会在以后的章节细讲，这样讲只是为了方便理解。</p>
+<p>&emsp; 在下一节，我们就要实实在在的接触软硬件了！有没有觉得很激动？本来我计划计算机基础就写一节的，可是一写就停不下来，看来需要两节，当然如果我觉得下一节内容较多，不易于一节接受，我可能会分成更多节，基础很重要，我为了补全这些基础，苦苦摸索了好多年，我不希望大家和我一样，在无知的痛苦和黑暗中苦苦的寻找出路，所以我将我掌握的知识尽可能多的写出来。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-04-29T14:34:44.707Z" itemprop="dateUpdated">2017-04-29 22:34:44</time>
+</span><br>
+
+
+        
+    </div>
+    <footer>
+        <a href="https://Teach-C.github.io">
+            <img src="/img/avatar.png" alt="Teach-C">
+            Teach-C
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/二进制/">二进制</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/指令/">指令</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/程序/">程序</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机/">计算机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机原理/">计算机原理</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计算机基础/">计算机基础</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/&title=发现一个不错的C语言自学项目 -- 《计算机 -- 只懂得0和1的机器》 — Teach-C ＠Tecsploit &pic=https://Teach-C.github.io/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/&title=发现一个不错的C语言自学项目--《计算机 -- 只懂得0和1的机器》 — Teach-C&source=&emsp; 终于，经过几天的调试修改，我解决了章节页面的排序问题，可以进行进一步的讲解了，本节我将和大家探讨关于计算机的一些基本的问题，废话不多说，Le..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《计算机 -- 只懂得0和1的机器》 — Teach-C&url=https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/&via=https://Teach-C.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/cj23d7a6m00025bs64ho6deot/1-0-things-before-start/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">本章前言</h4>
+      </a>
+    </div>
+  
+
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechat.jpg" title="BTC打赏二维码" alt="BTC打赏二维码">
+            <p>Bitcoin</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>内容遵循<a rel="license" href="/license">Free License</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>Teach-C &copy; 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/&title=发现一个不错的C语言自学项目 -- 《计算机 -- 只懂得0和1的机器》 — Teach-C ＠Tecsploit &pic=https://Teach-C.github.io/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/&title=发现一个不错的C语言自学项目--《计算机 -- 只懂得0和1的机器》 — Teach-C&source=&emsp; 终于，经过几天的调试修改，我解决了章节页面的排序问题，可以进行进一步的讲解了，本节我将和大家探讨关于计算机的一些基本的问题，废话不多说，Le..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《计算机 -- 只懂得0和1的机器》 — Teach-C&url=https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/&via=https://Teach-C.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADK0lEQVR42u3awU7DMBAE0P7/T8MVCUhm1qnUOC8nVELi50qMdtevV3x9BdfvO39+cvzM33e2z3m948LGxsa+CbvFHH+eLz15/vFz8vX8sTXY2NjY27GPg6H9+Xhb/8P895x2+6KQw8bGxn4w+3hBSSDlZcnKV4KNjY2N3bZ7jl/fLnSlRMHGxsZ+JjtpDyWlxXrAzEqaN/bSsLGxsT+enU9FP//nt8y3sbGxsT+Y/VVebcEwi7rZYLhQYGNjY2/EzgNgpVxpD/ckDak2wLCxsbF3ZV/V1p8tK9+aFWoxVcbGxsbejr3Spl8pV9pBcn5gKAowbGxs7I3Y6035ti2VMJKgOilysLGxsbdjzw5cJstav382nDj5SrCxsbE3ZecD2lnxsN6iyt9yEorY2NjYG7HbYIviYYRMBr35PUk8Y2NjY+/Bzl/ziq/8IM7KYHh2PzY2Nvbe7FlIzA7QvGMsUSQ2NjY29qbsdomzYuCqsmRlCIGNjY29K/uqxk07sm2HDbNwvbgUwcbGxv4Y9uywTj52bcNmvanUtrSwsbGx92CvvHI9QmaHe/KDRCetJWxsbOybs2eM9p6VDUq+kvrCxsbG3ojdDkpXFrEeYHkpcllBgo2NjX0TdtumaQ/lJDE5K2ZmbSZsbGzsndj5sZh2KJsEYT5IyFtIS00lbGxs7Buyc1K7xDzqVppKF7S9sLGxsbdmt4OEvKk0a1q9Y/SLjY2NfXd2HlfFnCFeVhI2s3ed/BYbGxv7Aey2eFhfYh5XbZPrZB6CjY2NfXP2esM9x6w39JNwvbiLho2NjX0rdlsSXDU2uOqT9kAnNjY29nPY7cCgbVHlQ4J2O04U2NjY2A9gt434WQQm4+HZaPnkr7CxsbG3YK+3k9ouTRtXsyFBpMfGxsbegt3+618JreMl5s+fHdkZbgo2Njb2Tdht6z/nzdpP7eB21vzCxsbG3o/dHsSZjQdmpVEbpVELDBsbG/vx7DaE2kZ/OzBuCxtsbGxs7PxgzfrgdtaEOok9bGxs7O3Ys8Boj+bkvNlxn+Q4JjY2NvZ+7DwA2sM6x6+fxV4enCuBh42NjX0T9jen4iFMr07CdgAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '去哪里了？';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '咦!回来了~';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
