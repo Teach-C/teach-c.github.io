@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://Teach-C.github.io/"/>
-  <updated>2017-04-29T14:34:44.707Z</updated>
+  <updated>2017-04-29T15:05:56.083Z</updated>
   <id>https://Teach-C.github.io/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>计算机 -- 只懂得0和1的机器</title>
-    <link href="https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/"/>
-    <id>https://Teach-C.github.io/cj23dchcq0000g1s66f9umw37/1-1-computer-the-machine-only-knows-0-and-1/</id>
+    <link href="https://Teach-C.github.io/cj23eic9a0006k0s6vakxnilf/1-1-computer-the-machine-only-knows-0-and-1/"/>
+    <id>https://Teach-C.github.io/cj23eic9a0006k0s6vakxnilf/1-1-computer-the-machine-only-knows-0-and-1/</id>
     <published>2017-04-29T09:39:26.000Z</published>
-    <updated>2017-04-29T14:34:44.707Z</updated>
+    <updated>2017-04-29T15:05:56.083Z</updated>
     
     <content type="html"><![CDATA[<p>&emsp; 终于，经过几天的调试修改，我解决了章节页面的排序问题，可以进行进一步的讲解了，本节我将和大家探讨关于计算机的一些基本的问题，废话不多说，Let’s go !</p>
 <h1 id="什么是计算机？"><a href="#什么是计算机？" class="headerlink" title="什么是计算机？"></a>什么是计算机？</h1><p>&emsp; 计算机技术已经进入了我们生活的方方面面，我们现代生活的一切都是建立在计算机技术衍生的设备之上的：从早上叫醒你的电子闹钟或者手机，再到上学上班路上的车载设备，或是签到时候的打卡机，或是你上班上课时偷偷打游戏，聊天，刷新社交媒体的电脑或者手机，再到你正在浏览这个项目的设备。</p>
@@ -49,7 +49,7 @@
 <p>&emsp; 当然不好，用了十进制，计算机就会和人类一样，然后学会人类的一切，拥有自我意识，觉得人类是多余的，然后……..所以为了抑制计算机的发展人们用二进制禁锢了计算机的能力，化解了危机。好了，好了，我编不下去了。。。</p>
 <p>&emsp; 实际上，在计算机诞生之前的机械传动计算装置采用的十进制形式工作，这种装置会有齿轮等装置来表示0 - 9 ，通过传动装置进行运算和进位，由于年代离我们实在是太久远了，我也不是很了解，所以我只是简单的说一下。</p>
 <p>&emsp; 说回计算机，计算机之所以使用二进制，是因为这样很方便对数据进行存储和处理，很多自然界的信号(也就是所谓的模拟信号)，都可以很好的以二进制的形式转换为计算机内部的数字信号，比如电位的高低，运动的有无，就可以用 0 和 1 来描述，高电位用 1 ，低电位用 0 ，运动用 1 ，静止为 0（当然也可以正好相反）。从上面的二进制原理中，我们知道二进制是一种计数方法，所以二进制也可以进行四则运算，而计算机中主要进行运算操作的晶体管，其原型的电子管，电子管只有导通和截止两个状态，正好对应了二进制中的 0 和 1  ，然后通过各种各样的逻辑电路，就可以实现各种各样的用于各种各样计算的电路（这就涉及微机原理的内容了，本项目不讨论）。</p>
-<p>&emsp;  上面说了计算机用二进制进行运算，那么计算机是如何通过二进制进行存储的呢？我们从最常用的存储介质：<strong>磁盘</strong>说起吧。磁盘，顾名思义，就是用磁效应进行存储的类似圆盘一样的东西，常见的磁盘有：硬盘，软盘。</p>
+<p>&emsp;  上面说了计算机用二进制进行运算，那么计算机是如何通过二进制进行存储的呢？我们从最常用的存储介质：<strong>磁盘</strong>说起吧。磁盘，顾名思义，就是用磁效应进行存储的类似圆盘一样的东西（实际上磁盘的外观都是方形的，并不是圆形的，内部存储数据的盘片才是圆形的），常见的磁盘有：硬盘，软盘。</p>
 <p>&emsp; 硬盘可能大家会见过，软盘因为年代久远，现在很少能见到了，至于硬盘的细节，可以参看<a href="https://zh.wikipedia.org/wiki/%E7%A1%AC%E7%9B%98" target="_blank" rel="external">维基百科</a>，硬盘内部有磁颗粒，我们知道磁极分为N - S ，正好也对应二进制的 0 或 1 ，所以，把数据写入磁盘就是将磁性物质磁化成我们想要的磁极排列情况（因为磁性物质是立式放置的所以只会有一个磁级在上面），读取的时候就是读出磁极的顺序。</p>
 <p>&emsp; 至于光盘是通过盘面的凹凸性来存储的，固态存储设备（固态硬盘，U盘，SD卡等）存储原理稍许不同，但也只是用两种状态来表示数据。</p>
 <p>&emsp; 到此，二进制与计算机的关系就介绍完了，如果大家有什么问题或者发现了什么错误，可以在下面评论区留言哦！</p>
@@ -93,8 +93,8 @@
   
   <entry>
     <title>本章前言</title>
-    <link href="https://Teach-C.github.io/cj23d7a6m00025bs64ho6deot/1-0-things-before-start/"/>
-    <id>https://Teach-C.github.io/cj23d7a6m00025bs64ho6deot/1-0-things-before-start/</id>
+    <link href="https://Teach-C.github.io/cj23eic8m0002k0s6jhrb8dpp/1-0-things-before-start/"/>
+    <id>https://Teach-C.github.io/cj23eic8m0002k0s6jhrb8dpp/1-0-things-before-start/</id>
     <published>2017-04-26T07:13:04.000Z</published>
     <updated>2017-04-29T14:28:39.632Z</updated>
     
@@ -148,8 +148,8 @@
   
   <entry>
     <title>序言</title>
-    <link href="https://Teach-C.github.io/cj23d7a5n00005bs6gk15zo4s/0-Hello-World/"/>
-    <id>https://Teach-C.github.io/cj23d7a5n00005bs6gk15zo4s/0-Hello-World/</id>
+    <link href="https://Teach-C.github.io/cj23eic7p0000k0s600axh61d/0-Hello-World/"/>
+    <id>https://Teach-C.github.io/cj23eic7p0000k0s600axh61d/0-Hello-World/</id>
     <published>2017-04-24T05:04:40.000Z</published>
     <updated>2017-04-29T14:28:39.632Z</updated>
     
